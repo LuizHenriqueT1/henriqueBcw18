@@ -13,17 +13,17 @@
     <title>Página de Start BCW18</title>
 </head>
 
-<body style="font-family: roboto;">
+<body>
     <header>
-        <nav>
-            <a href="#somos"> Quem somos teste <strong>BCW18</strong>.</a> |
-            <a href="#cronograma">Cronograma do <strong>BCW18</strong>.</a> |
-            <a href="#dicas">Dicas do team <strong>BCW18</strong>.</a> |
-            <a href="#trabalho">Orientações de trabalho como Dev.</a> |
-        </nav>
+        <ul>
+            <li><a href="#cadastro"> Cadastro</a> |</li>
+            <li><a href="#cronograma">Cronograma</a> |</li>
+            <li><a href="#dicas">Dicas do team</a> |</li>
+            <li><a href="#trabalho">Orientações de trabalho como Dev.</a> |</li>
+        </ul>
     </header>
     <main>
-        <div style="width: 650px;">
+        <div class="divisorbase">
             <h1>Trajetória de Sucesso</h1>
             <table>
                 <tr>
@@ -39,18 +39,19 @@
                     <td>
                         <figure>
                             <img src="./img/imagem3.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.1 -  Alto de Inscrição na SoulCode.  </figcaption>
+                            <figcaption>Fig.1 - Alto de Inscrição na SoulCode. </figcaption>
                         </figure>
                     </td>
                 </tr>
                 <tr>
                     <td>Segunda</td>
                     <td>Testes trilha zero e entrevista com recrutador para avaliação
-                        nesta faze se anlisa a elegilidade para a bolsa de estudos perante os clientes e o candidato</td>
+                        nesta faze se anlisa a elegilidade para a bolsa de estudos perante os clientes e o candidato
+                    </td>
                     <td>
                         <figure>
                             <img src="./img/imagem2.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.2 -  Testes de Logica. </figcaption>
+                            <figcaption>Fig.2 - Testes de Logica. </figcaption>
                         </figure>
                     </td>
                 </tr>
@@ -60,13 +61,70 @@
                     <td>
                         <figure>
                             <img src="./img/imagem1.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.3 -  Aprovação e convocação.  </figcaption>
+                            <figcaption>Fig.3 - Aprovação e convocação. </figcaption>
                         </figure>
-                        
+
                     </td>
                 </tr>
             </table>
 
+        </div>
+        <div>
+            <form action="#" method="" id="cadastro" class="divisorbase">
+                <div>
+                    <input type="hidden" id="id">
+                </div>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input id="nome" type="text" placeholder="Entre com seu nome">
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" placeholder="Entre com seu e-mail">
+                </div>
+                <div>
+                    <label for="nascimento">Data de nascimento: </label>
+                    <input type="date" id="nascimento">
+                </div>
+                <div>
+                    <label for="deficiencia">Deficiencia</label>
+                    <input type="cheakbox" id="deficiencia" checked>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Entre com sua senha" maxlength="14">
+                </div>
+                <div>
+                    <label for="escolaridade">Nivel Escolar: </label><br>
+                    <input type="radio" name="educacao" id="escolaridade" value="F1"> Fundamental <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="M1"> Médio <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="T1"> Tecnologo <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="L1"> Licenciado <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="P1"> Pós graduação <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="P2"> Mestrado <br>
+                    <input type="radio" name="educacao" id="escolaridade" value="P3"> Dutorado <br>
+
+                </div>
+                <div>
+                    <label for="experiencia">Qual foi sua experiência com programação: </label>
+                    <input type="range" id="experiencia" min="5" max="50"
+                    oninput="display.value=value" oncharge="display.value=value">
+                    <input type="text" id="display" value="0"
+                    oninput="experiencia.value=value" oncharge="experiencia.value=value" maxlength="3" size="3" disabled>
+                    
+                </div>
+                <div>
+                    <label for="descricao">Descrição da experiência:</label><br>
+                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as tecnologias conhecidas."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+
+
+
+            </form>
         </div>
 
     </main>
