@@ -14,63 +14,60 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de desenvolvimento Web Full stack da SoulCode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
-            <li><a href="#cadastro"> Cadastro</a> |</li>
-            <li><a href="#cronograma">Cronograma</a> |</li>
-            <li><a href="#dicas">Dicas do team</a> |</li>
-            <li><a href="#trabalho">Orientações de trabalho como Dev.</a> |</li> 
+            <li><a href="#cadastro"> Cadastro</a> </li>
+            <li><a href="#cronograma">Cronograma</a> </li>
+            <li><a href="#dicas">Dicas do team</a> </li>
+            <li><a href="#trabalho">Orientações de trabalho como Dev.</a> </li>
         </ul>
     </header>
     <main>
-        <div class="divisorbase">
-            <h1>Trajetória de Sucesso</h1>
-            <table>
-                <tr>
-                    <th><strong>FASE</strong></th>
-                    <th><strong>Descrição</strong></th>
-                    <th><strong>Imagem</strong></th>
-                </tr>
-                <tr>
-                    <td>Primeira</td>
-                    <td>Inscrição e entrada na trilha zero, para o teste de lógica,
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem3.jpg">
+                        <img src="/img/imagem3.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
+                        Inscrição e entrada na trilha zero, para o teste de lógica,
                         curso da trilha zero e montagem do Pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem3.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.1 - Alto de Inscrição na SoulCode. </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>Testes trilha zero e entrevista com recrutador para avaliação
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem2.jpg">
+                        <img src="/img/imagem2.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
+                        Testes trilha zero e entrevista com recrutador para avaliação
                         nesta faze se anlisa a elegilidade para a bolsa de estudos perante os clientes e o candidato
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem2.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.2 - Testes de Logica. </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceira</td>
-                    <td>Dinâmica em grupo pelo Google meet com desafios. </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem1.jpg" alt="Alto Inscrição na SoulCode" width="180px" height="180px">
-                            <figcaption>Fig.3 - Aprovação e convocação. </figcaption>
-                        </figure>
-
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem1.jpg">
+                        <img src="/img/imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
+                        Fig.3 - Aprovação e convocação.
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div>
-            <form action="#" method="" id="cadastro" class="divisorbase">
+            <form action="#" method="" id="cadastro">
                 <div>
                     <input type="hidden" id="id">
                 </div>
@@ -107,15 +104,16 @@
                 </div>
                 <div>
                     <label for="experiencia">Qual foi sua experiência com programação: </label>
-                    <input type="range" id="experiencia" min="5" max="50"
-                    oninput="display.value=value" oncharge="display.value=value">
-                    <input type="text" id="display" value="0"
-                    oninput="experiencia.value=value" oncharge="experiencia.value=value" maxlength="3" size="3" disabled>
-                    
+                    <input type="range" id="experiencia" min="5" max="50" oninput="display.value=value"
+                        oncharge="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                        oncharge="experiencia.value=value" maxlength="3" size="3" disabled>
+
                 </div>
                 <div>
                     <label for="descricao">Descrição da experiência:</label><br>
-                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as tecnologias conhecidas."></textarea>
+                    <textarea id="descricao" cols="70" rows="5"
+                        placeholder="Descreva as tecnologias conhecidas."></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
